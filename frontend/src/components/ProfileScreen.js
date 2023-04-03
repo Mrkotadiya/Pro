@@ -125,7 +125,6 @@ const ProfileScreen = ({location, history}) => {
       </Helmet>
       <Image className="wave" src={wave}/>
       <div className="containera">
-              
 		<div className="imga">
 			<Image src={addUs} />
 		</div>
@@ -223,8 +222,8 @@ const ProfileScreen = ({location, history}) => {
                         </Tr>
                       </Thead>
                       <Tbody>
-                        {orders.map(order=>(    
-                        <Tr key = {order._id}>
+                        {orders.map(order=>(   
+                          <Tr key = {order._id}>
                           <Td>{order._id}</Td>
                           <Td>{order.createdAt.substring(0,10)}</Td>
                           <Td>{order.totalPrice}</Td>
@@ -236,6 +235,7 @@ const ProfileScreen = ({location, history}) => {
                             </Link>
                           </Td>
                         </Tr>
+                          
                         ))}
                       </Tbody>
                      </Table>

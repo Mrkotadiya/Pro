@@ -69,7 +69,7 @@ const Orders = ({history}) => {
                                     <Td>
                                         <Stack>
                                         <Link to ={ `/order/${order._id}`}>
-                                             <Button leftIcon = {<AiOutlineEdit size = '16' />} colorScheme ='blue' size="xs"  >Details</Button>
+                                             <Button leftIcon = {<AiOutlineEdit size = '16' />} colorScheme ='blue' size="xs"  >Details helo</Button>
                                         </Link>
                                         </Stack>
                                     </Td>

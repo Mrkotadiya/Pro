@@ -31,6 +31,9 @@ const Placeorder = ({ history }) => {
 
         }))
     }
+    const continueShopping = ()=>{
+        window.location.href='http://localhost:3000';
+    }
     useEffect(() => {
         if (success) {
             console.log(order._id)
@@ -86,13 +89,43 @@ const Placeorder = ({ history }) => {
                         <h3>Shipping: </h3><p>${cart.shippingPrice}</p>
                         <h3>Tax: </h3><p>${cart.taxPrice}</p>
                         <h3>Total: </h3><p>${cart.totalPrice}</p>
+                  
+
                         <div className="div-placeorder-btn">
-                            <button className="placeorder-btn" onClick={Placeorderhanlder}>Place Order</button>
+                            <button className="placeorder-btn" onClick={Placeorderhanlder}  data-toggle="modal" data-target="#exampleModal">Place Order</button>
                             {error && error}
                         </div>
+                      
+
                     </div>
 
+{/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> */}
+
+                    <div className='div-continueShopping-btn'>
+                            <button className='continueShopping-btn' onClick={continueShopping}>Continue Shoppiing</button>
+                        </div>
 
                 </div>
 
