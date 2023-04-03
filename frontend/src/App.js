@@ -57,7 +57,7 @@ import Orders from './pages/Orders/Orders'
                  <Route path="/login" component={LoginScreen}/>
                  <Route path="/register" component={RegisterScreen}/>
                  <Route path="/profile" component={ProfileScreen}/>
-                 <Route path="/shipping" component={Checkout}/>
+                 <Route path="/checkout" component={Checkout}/>
                  <Route path="/placeorder" component={Placeorder}/>
                  <Route path="/order/:id" component={Order}/>
                  <Route path="/admin/userlist" component={Users}/>

@@ -37,7 +37,7 @@ const Placeorder = ({ history }) => {
             history.push(`/order/${order._id}`)
         }
         //eslint-disable-next-line
-    }, [history, success])
+    }, [history])
     return (
         <div className="placeorder">
             <Helmet>

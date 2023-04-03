@@ -20,7 +20,8 @@ const Cartpage = ({match,location,history}) => {
     },[dispatch,id,qty])
 
     const checkoutHandler =()=>{
-        history.push('./login?redirect=shipping');
+        window.location.href = "http://localhost:3000/checkout";
+        // window.location.href = "./login?redirect=shipping";
         console.log("checkoiut");
     }
 
