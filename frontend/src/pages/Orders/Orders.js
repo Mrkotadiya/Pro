@@ -23,6 +23,7 @@ const Orders = ({history}) => {
     const {loading,error,orders} = orderList
     const userLogin = useSelector(state => state.userLogin)
     const {userInfo} = userLogin
+    console.log("error che:-",error);
 
     useEffect(()=>{
         if(userInfo && userInfo.isAdmin){
@@ -37,11 +38,13 @@ const Orders = ({history}) => {
             <Helmet>
                 <title>Orders</title>
             </Helmet>
-        <h1 className = 'titlepanel'> Orders :</h1>
+        <h1 className = 'titlepanel'> Orders : </h1>
         {loading ?  <div className='loading'>
                      <HashLoader   color={"#1e1e2c"}  loading={loading} size={40} />
                    </div> : 
-                   error ? <h1>error</h1> :
+                   error ? <h1>error</h1> 
+                   :
+
                    <Box overflowX = 'auto'>
                    <Table  className = 'tableusers' variant="striped">
                        <Thead>

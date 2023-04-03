@@ -78,7 +78,7 @@ const getProductById = asyncHandler(async (req, res) => {
 
 // @desc Delete a product
 // @route GET /api/products/:id
-// @access Private/Admin
+// @access Private/Admin 
 const deleteProduct = asyncHandler(async (req, res) => {
     const product =  await Product.findById(req.params.id)
     if(product){
