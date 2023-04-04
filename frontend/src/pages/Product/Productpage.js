@@ -146,7 +146,7 @@ const submithanlder = () =>{
            </ul>
            </div>
             <ul>
-              <li>Status: <span>{product.countInStock > 0 ? 'ìn stock' :  'Out Of Stock'}</span></li>
+              <li>Status: <span>{product.countInStock > 0 ? 'in stock' :  'Out Of Stock'}</span></li>
               <li>Category: <span>{product.category.map(cg =>' | ' + cg + ' | ')}</span></li>
               <li>Shipping Area: <span>All over the world</span></li>
               <div>
