@@ -51,7 +51,24 @@
 }
 
 /* nibrbhay  nirbhay */
-.placeorder-btn , .div-continueShopping-btn button {
+
+.div-continueShopping-btn button{
+  width: 100%;
+   display: block;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(26deg, #0a0909, #594545ed, #6e5250);
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.div-placeorder-btn button {
   display: block;
   width: 50%;
   height: 50px;
@@ -67,6 +84,14 @@
   cursor: pointer;
   transition: 0.5s;
 }
+
+
+#orderConfimTittle{
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 
 .colors-name {
   color: blue;

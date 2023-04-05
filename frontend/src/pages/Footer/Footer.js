@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footerCmp">
             <footer>
                 <div className="footerCategorie">
-                    <h1>Categories</h1>
+                    <h1>Our Menu</h1>
                     <ul>
                         <li><Link to = '/shop/?cg=Women'>Pizza</Link></li>
                         <li><Link to = '/shop/?cg=Men'>Burger</Link></li>
@@ -29,8 +29,13 @@ const Footer = () => {
 
                 <div className="footerGetInTouch">
                     <h1>Get in touch</h1>
-                    <ul>
-                        <p>Any questions? Let us know in store at BP 473 Complexe universitaire Al Qods, Oujda 60000 or call us on (+212) 65964665</p>
+                    <p> <span id='hoursOpen'> Hours Open </span> <br />
+                            9:00 am to 2:00  pm <br />
+                            5:00 pm to 12:00 am 
+                        </p>
+                    <ul>       
+                      
+                       
                         <li className="footerIcons">
                             <FiFacebook size="25" />
                         </li>
@@ -44,7 +49,8 @@ const Footer = () => {
                 </div>
 
                 <div className="footerNews">
-                    <h1>Newsletter</h1>
+                    
+                    {/* <h1>Newsletter</h1>
                     <ul>
                         <li>
                             <Stack spacing={3}>
@@ -54,23 +60,23 @@ const Footer = () => {
                         <li>
                             <button className="footerBtn">Subscribe</button>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
 
                 <div className="creditsIcons">
-                    <ul>
+                    {/* <ul>
                         <li><img src="https://i.imgur.com/AHCoUZO.png" className="img1"/></li>
                         <li><img src="https://i.imgur.com/JZRipBg.png" className="img2" /></li>
                         <li><img src="https://i.imgur.com/l8OAGyo.png" className="img3" /></li>
                         <li><img src="https://i.imgur.com/IDHC2iv.png" className="img4" /></li>
-                    </ul>
+                    </ul> */}
                     
                 </div>
                 
-                <div className="paragraphFooter"><p>Copyright ©2021 All rights reserved | This template is made with ♡ by Developers of ESTO</p>
-                <Link to = '' >Abdessamad bourhjoul</Link>
+                <div className="paragraphFooter"><p>Copyright ©2023 All rights reserved | This website is made with ♡ by 3 ideos.</p>
+                {/* <Link to = '' >Abdessamad bourhjoul</Link>
                 <Link to = ''  >Soufian zaam</Link>
-                <Link to = ''  >Souhail ouabou</Link>
+                <Link to = ''  >Souhail ouabou</Link> */}
                 </div>
 
 

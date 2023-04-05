@@ -32,7 +32,7 @@ const CardProduct = ({product}) => {
             <div className='cardProduct' onMouseOver={ ()=> {setShowbtn (true)}} 
                                           onMouseLeave= { ()=> {setShowbtn (false)}}>           
                  <div className='imgDiv'>
-                         <Image className='imgProduct' boxSize='350px' objectFit='cover' src={product.images[0]} />  
+                         <Image className='imgProduct' boxSize='350px' objectFit='fill' borderRadius='10px' src={product.images[0]} />  
                  </div>
                <div className='bottomcard'>
                        <Link to={`/product/${product._id}`} exact  >     

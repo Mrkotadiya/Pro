@@ -143,9 +143,9 @@ import Searchnav from './Searchnav';
                                   </MenuButton>
                                   <MenuList>
                                   <MenuItem>
-                                  <Link to = '/admin/userlist'>
+                                  <NavLink to = '/admin/userlist'>
                                         Users
-                                     </Link>
+                                     </NavLink>
                                   </MenuItem>
                                   <MenuItem>
                                   <Link to = '/admin/productlist'>

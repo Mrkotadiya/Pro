@@ -66,7 +66,7 @@ const ProductsC = ({match,history}) => {
     return (
         <>
         <div className = 'Cgfilter'>
-            <h1>{Cg ? Cg : keyword ?  "*" + keyword + "* Search" : 'All'} Products</h1>
+            <h1> Products {Cg ? Cg : keyword ?  "*" + keyword + "* Search" : 'All'}</h1>
             <div className = 'filtersbtn '>
             <button className = {`filterbtn ${showfilter ? 'activebtn' : ''}` }  
             onClick = {filterfunc} > {showfilter ?  <IoMdClose  size = '20'/>: <BsFilter size = '20'/> } 

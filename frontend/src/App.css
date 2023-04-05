@@ -562,6 +562,8 @@ nav {
   height: 430px;
   justify-self: center;
   background-position: center;
+  /* nirbhay */
+  border-radius: 10px;  
 }
 .QuickView {
   position: relative;
